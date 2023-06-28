@@ -1,0 +1,12 @@
+{
+  "generator-jhipster-quarkus:2.0.0": {
+    "promptValues": {
+      "packageName": "com.product.app"
+    }
+  },
+  "generator-jhipster:7.9.3": {
+    "promptValues": {
+      "nativeLanguage": "en"
+    }
+  }
+}

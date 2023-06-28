@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  quarkus-app:
+    container_name: product-management-application
+    build:
+      context: .
+      dockerfile: src/main/docker/Dockerfile.jvm
+    ports:
+      - '8080:8080'
+

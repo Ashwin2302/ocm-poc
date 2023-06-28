@@ -1,0 +1,54 @@
+{
+  "generator-jhipster": {
+    "applicationType": "monolith",
+    "authenticationType": "jwt",
+    "baseName": "product_management",
+    "blueprints": [
+      {
+        "name": "generator-jhipster-quarkus",
+        "version": "2.0.0"
+      }
+    ],
+    "buildTool": "maven",
+    "cacheProvider": "no",
+    "clientFramework": "no",
+    "clientPackageManager": "npm",
+    "clientTheme": "none",
+    "clientThemeVariant": "",
+    "creationTimestamp": 1687850713454,
+    "databaseType": "sql",
+    "devDatabaseType": "postgresql",
+    "dtoSuffix": "DTO",
+    "enableGradleEnterprise": false,
+    "enableHibernateCache": false,
+    "enableTranslation": false,
+    "entities": ["Product"],
+    "entitySuffix": "",
+    "jhiPrefix": "jhi",
+    "jhipsterVersion": "7.9.3",
+    "jwtSecretKey": "NGNjYTA5MDgwYzY2N2QxMGI3NzA5OTg2NmRjYjU4NGU1Y2M3NmU0MmNkODlhOTE0NDE1NDU0Nzc2NTBjYzlhMjFiMTkzM2I4MzkyNjYyM2VmODhiYjllMjg1ZGY4YzA5NGExMDg2MzYwN2NjYjdjYzQwMDUxMWY3Y2E4NDg5NGU=",
+    "languages": ["en", "fr"],
+    "lastLiquibaseTimestamp": 1687851966000,
+    "nativeLanguage": "en",
+    "otherModules": [
+      {
+        "name": "generator-jhipster-quarkus",
+        "version": "2.0.0"
+      }
+    ],
+    "packageName": "com.product.app",
+    "pages": [],
+    "prodDatabaseType": "postgresql",
+    "reactive": false,
+    "searchEngine": false,
+    "serverPort": "8080",
+    "serviceDiscoveryType": false,
+    "skipCheckLengthOfIdentifier": false,
+    "skipClient": true,
+    "skipFakeData": false,
+    "skipUserManagement": false,
+    "testFrameworks": [],
+    "websocket": false,
+    "withAdminUi": true
+  }
+}

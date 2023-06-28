@@ -1,0 +1,13 @@
+entity Product {
+    id Long
+    productName String
+    description String
+    price Double  
+    imageUrl String
+}
+
+service all with serviceImpl
+
+
+
+
