@@ -7,7 +7,7 @@
 #
 # Then, build the image with:
 #
-# docker build -f src/main/docker/Dockerfile.jvm -t quarkus/product-management .
+# docker build -f src/main/docker/Dockerfile -t quarkus/product-management .
 #
 # Then run the container using:
 #
