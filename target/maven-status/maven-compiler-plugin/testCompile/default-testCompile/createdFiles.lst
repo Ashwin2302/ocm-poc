@@ -1,0 +1,14 @@
+com/product/app/config/mock/JHipsterPropertiesMock.class
+com/product/app/service/mapper/UserMapperTest.class
+com/product/app/infrastructure/EmailServerResource.class
+com/product/app/TestUtil$1.class
+com/product/app/ArchTest.class
+com/product/app/domain/ProductTest.class
+com/product/app/infrastructure/InjectMailServer.class
+com/product/app/TestUtil.class
+com/product/app/config/LocalDateProviderTest.class
+META-INF/panache-archive.marker
+com/product/app/builder/UserBuilder.class
+com/product/app/domain/AuthorityTest.class
+com/product/app/domain/UserTest.class
+com/product/app/utility/IntegrationTestBase.class
