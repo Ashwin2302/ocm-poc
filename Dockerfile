@@ -7,7 +7,7 @@
 #
 # Then, build the image with:
 #
-# docker build -f src/main/docker/Dockerfile -t quarkus/product-management .
+# docker build -f src/main/docker/Dockerfile.jvm -t quarkus/product-management .
 #
 # Then run the container using:
 #
@@ -26,6 +26,8 @@ FROM registry.access.redhat.com/ubi8/ubi-minimal:8.4
 ARG JAVA_PACKAGE=java-11-openjdk-headless
 ARG RUN_JAVA_VERSION=1.3.8
 ENV LANG='en_US.UTF-8' LANGUAGE='en_US:en'
+WORKDIR /usr/src/app
+COPY . .
 # Install java and the run-java script
 # Also set up permissions for user `1001`
 RUN microdnf install curl ca-certificates ${JAVA_PACKAGE} \
@@ -42,10 +44,10 @@ RUN microdnf install curl ca-certificates ${JAVA_PACKAGE} \
 
 ENV JAVA_OPTIONS="-Dquarkus.http.host=0.0.0.0 -Djava.util.logging.manager=org.jboss.logmanager.LogManager"
 # We make four distinct layers so if there are application changes the library layers can be re-used
-#COPY --chown=1001 target/quarkus-app/lib/ /deployments/lib/
-#COPY --chown=1001 target/quarkus-app/*.jar /deployments/
-#COPY --chown=1001 target/quarkus-app/app/ /deployments/app/
-#COPY --chown=1001 target/quarkus-app/quarkus/ /deployments/quarkus/
+COPY --chown=1001 target/quarkus-app/lib/ /deployments/lib/
+COPY --chown=1001 target/quarkus-app/*.jar /deployments/
+COPY --chown=1001 target/quarkus-app/app/ /deployments/app/
+COPY --chown=1001 target/quarkus-app/quarkus/ /deployments/quarkus/
 
 EXPOSE 8080
 USER 1001
